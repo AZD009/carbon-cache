@@ -1,0 +1,31 @@
+{
+  "name": "carbon-cache",
+  "version": "0.0.0",
+  "description": "A simple and light weight extendable cache",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": "https://gitlab.com/AZD009/carbon-cache",
+  "keywords": [
+    "cache",
+    "caching",
+    "carbon-cache",
+    "azd cache",
+    "easy cache",
+    "lazy cache",
+    "simple cache",
+    "inmemory",
+    "in memory",
+    "easiest cache",
+    "simple cache",
+    "fast",
+    "light weight"
+  ],
+  "author": "Chandrasekhar V. Tanneru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/AZD009/carbon-cache/issues"
+  },
+  "homepage": "https://gitlab.com/AZD009/carbon-cache#README"
+}
