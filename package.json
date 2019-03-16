@@ -1,6 +1,6 @@
 {
   "name": "carbon-cache",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A simple and light weight extendable cache",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -19,11 +19,9 @@
   "scripts": {
     "build": "tsc",
     "test": "tsc && jest --coverage --coverageReporters=text-lcov | coveralls"
-  },
-  "engines" : { 
-    "node": ">=8.15",
-    "npm": ">=6.4"  
-  },
+  },  
+  "node": ">=8.15",
+  "npm": ">=6.4",  
   "repository": "https://github.com/AZD009/carbon-cache",
   "keywords": [
     "cache",
