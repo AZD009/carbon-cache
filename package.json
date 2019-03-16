@@ -20,6 +20,10 @@
     "build": "tsc",
     "test": "tsc && jest --coverage --coverageReporters=text-lcov | coveralls"
   },
+  "engines" : { 
+    "node": ">=8.15",
+    "npm": ">=6.4"  
+  },
   "repository": "https://github.com/AZD009/carbon-cache",
   "keywords": [
     "cache",
