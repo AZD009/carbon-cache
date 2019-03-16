@@ -1,6 +1,6 @@
 {
   "name": "carbon-cache",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A simple and light weight extendable cache",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -18,7 +18,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "test": "jest --coverage --coverageReporters=text-lcov | coveralls"
+    "test": "tsc && jest --coverage --coverageReporters=text-lcov | coveralls"
   },
   "repository": "https://github.com/AZD009/carbon-cache",
   "keywords": [
