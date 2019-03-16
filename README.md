@@ -1,6 +1,6 @@
-# carbon-cache
+# carbon-cache 
 
-[`carbon-cache`](https://gitlab.com/AZD009/carbon-cache) Is a simple, light weight and extendable in memory cache.
+[`carbon-cache`](https://github.com/AZD009/carbon-cache) Is a simple, light weight and extendable in memory cache.
 
 ## Install
 
