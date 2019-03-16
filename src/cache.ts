@@ -1,4 +1,4 @@
-export class Cache {
+export class CarbonCache {
 
     constructor(expire?: number){
         this.expire = expire;

@@ -2,9 +2,23 @@
   "name": "carbon-cache",
   "version": "0.0.0",
   "description": "A simple and light weight extendable cache",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "ts",
+      "tsx"
+    ],
+    "testRegex": "(/test/.*|(\\.|/)(test|spec))\\.(jsx?)$",
+    "collectCoverage": true
+  },
   "scripts": {
-    "test": "exit 0"
+    "build": "tsc",
+    "test": "jest --coverage --coverageReporters=text-lcov | coveralls"
   },
   "repository": "https://github.com/AZD009/carbon-cache",
   "keywords": [
@@ -27,5 +41,12 @@
   "bugs": {
     "url": "https://github.com/AZD009/carbon-cache/issues"
   },
-  "homepage": "https://github.com/AZD009/carbon-cache#README"
+  "homepage": "https://github.com/AZD009/carbon-cache#README",
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "coveralls": "^3.0.3",
+    "jest": "^24.5.0",
+    "ts-jest": "^24.0.0",
+    "typescript": "^3.3.3333"
+  }
 }

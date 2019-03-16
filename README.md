@@ -1,4 +1,4 @@
-# carbon-cache 
+# carbon-cache [![Build Status](https://travis-ci.org/AZD009/carbon-cache.svg?branch=master)](https://travis-ci.org/AZD009/carbon-cache) [![Coverage Status](https://coveralls.io/repos/github/AZD009/carbon-cache/badge.svg)](https://coveralls.io/github/AZD009/carbon-cache)
 
 [`carbon-cache`](https://github.com/AZD009/carbon-cache) Is a simple, light weight and extendable in memory cache.
 
