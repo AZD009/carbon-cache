@@ -9,13 +9,17 @@
 ### Example
 
 ```javascript
-const Cache = reuire('carbon-cache');
+const Cache = require('carbon-cache');
 
-// Create myCache valid for 10 seconds i.e. TTL is 10 seconds.
-const myCache = new Cache(10);  
+const myCache = new Cache.CarbonCache(100);  // Create myCache valid for 10 seconds i.e. TTL is 100 seconds.
+const myCache = new Cache.CarbonCache(); // TTL is completly optional. The below is perfectly valid.
 
-// TTL is completly optional. The below is perfectly valid.
-const myCache = new Cache();  
+`OR`
+
+import { CarbonCache } from 'carbon-cache';
+
+const myCache = new CarbonCache(100); // Create myCache valid for 10 seconds i.e. TTL is 100 seconds.
+const myCache = new CarbonCache(); // TTL is completly optional. The below is perfectly valid.
 
 // Populate Cache with JSON data
 myCache.importJson(_JSON data_);

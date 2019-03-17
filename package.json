@@ -1,6 +1,6 @@
 {
   "name": "carbon-cache",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A simple and light weight extendable cache",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
