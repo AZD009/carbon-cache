@@ -1,4 +1,4 @@
-# carbon-cache   [![Build Status](https://travis-ci.org/AZD009/carbon-cache.svg?branch=master)](https://travis-ci.org/AZD009/carbon-cache) [![Coverage Status](https://coveralls.io/repos/github/AZD009/carbon-cache/badge.svg)](https://coveralls.io/github/AZD009/carbon-cache) [![NPM](https://img.shields.io/npm/l/carbon-cache.svg)](https://npm.im/carbon-cache)  [![AZD](https://img.shields.io/david/AZD009/carbon-cache.svg)](https://npm.im/carbon-cache) [![GitHub issues](https://img.shields.io/github/issues-raw/AZD009/carbon-cache.svg)](https://github.com/AZD009/carbon-cache) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/AZD009/carbon-cache.svg)](https://github.com/AZD009/carbon-cache)
+# carbon-cache   [![Build Status](https://travis-ci.org/AZD009/carbon-cache.svg?branch=master)](https://travis-ci.org/AZD009/carbon-cache) [![Coverage Status](https://coveralls.io/repos/github/AZD009/carbon-cache/badge.svg)](https://coveralls.io/github/AZD009/carbon-cache) [![NPM](https://img.shields.io/npm/l/carbon-cache.svg)](https://npm.im/carbon-cache)  [![AZD](https://img.shields.io/david/AZD009/carbon-cache.svg)](https://npm.im/carbon-cache) [![GitHub issues](https://img.shields.io/github/issues-raw/AZD009/carbon-cache.svg)](https://github.com/AZD009/carbon-cache) [![Code size](https://badgen.net/bundlephobia/minzip/carbon-cache)](https://github.com/AZD009/carbon-cache)
 
 [`carbon-cache`](https://github.com/AZD009/carbon-cache) Is a simple, light weight and extendable in memory cache.
 
@@ -11,15 +11,15 @@
 ```javascript
 const Cache = require('carbon-cache');
 
-const myCache = new Cache.CarbonCache(100);  // Create myCache valid for 10 seconds i.e. TTL is 100 seconds.
-const myCache = new Cache.CarbonCache(); // TTL is completly optional. The below is perfectly valid.
+const myCache = new Cache.CarbonCache(100);  // Create myCache valid for 100 seconds i.e. TTL is 100 seconds.
+const myCache = new Cache.CarbonCache(); // TTL is completly optional. This is perfectly valid.
 
 `OR`
 
 import { CarbonCache } from 'carbon-cache';
 
-const myCache = new CarbonCache(100); // Create myCache valid for 10 seconds i.e. TTL is 100 seconds.
-const myCache = new CarbonCache(); // TTL is completly optional. The below is perfectly valid.
+const myCache = new CarbonCache(100); // Create myCache valid for 100 seconds i.e. TTL is 100 seconds.
+const myCache = new CarbonCache(); // TTL is completly optional. This is perfectly valid.
 
 // Populate Cache with JSON data
 myCache.importJson(_JSON data_);

@@ -2,7 +2,9 @@
 /coverage
 /src
 /test
-/dist/src/test
 tsconfig.json
 .travis.yml
 .coveralls.yml
+
+dist/**/*
+!dist/src/*.*
