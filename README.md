@@ -9,13 +9,10 @@
 ### Example
 
 ```javascript
-const Cache = require('carbon-cache');
+// Using good old require
+const { CarbonCache } = require('carbon-cache');
 
-const myCache = new Cache.CarbonCache(100);  // Create myCache valid for 100 seconds i.e. TTL is 100 seconds.
-const myCache = new Cache.CarbonCache(); // TTL is completly optional. This is perfectly valid.
-
-`OR`
-
+// Using import
 import { CarbonCache } from 'carbon-cache';
 
 const myCache = new CarbonCache(100); // Create myCache valid for 100 seconds i.e. TTL is 100 seconds.
