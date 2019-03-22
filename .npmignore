@@ -5,7 +5,6 @@
 tsconfig.json
 .travis.yml
 .coveralls.yml
-LICENSE
 
 dist/**/*
 !dist/src/*.*

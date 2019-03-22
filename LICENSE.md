@@ -1,4 +1,4 @@
-Copyright (C) 2019 by Chandrasekhar V. Tanneru
+Copyright (C) 2019 by [Chandrasekhar V. Tanneru](https://bit.ly/TANNERU)
 
 Permission to use, copy, modify, and distribute this software for any
 purpose with or without fee is hereby granted, provided that the above
