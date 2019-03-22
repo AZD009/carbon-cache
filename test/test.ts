@@ -1,11 +1,24 @@
 import { CarbonCache } from '../src/cache';
 
 const myCache = new CarbonCache(100);
+const myOtherCache = new CarbonCache();
 
 let sampleJson = {
     "apple":{"color":"red","weight":200},
     "orange":{"color":"orange","weight":100},
 }
+
+test('get', () => {
+  expect(myCache.get("apple")).toEqual({});
+});
+
+test('has', () => {
+  expect(myCache.has("apple")).toEqual(false);
+});
+
+test('del', () => {
+  expect(myCache.del("apple")).toEqual(false);
+});
 
 test('put', () => {
   expect(myCache.put("banana",{"color":"yellow","weight":50})).toEqual(true);
@@ -24,25 +37,25 @@ test("isEmpty", () => {
 });
 
 test('importJson', () => {
-  expect(myCache.importJson(sampleJson)).toEqual(true);
+  expect(myOtherCache.importJson(sampleJson)).toEqual(true);
 });
 
 test('get', () => {
-  expect(myCache.get("apple")).toEqual({"color":"red","weight":200});
+  expect(myOtherCache.get("apple")).toEqual({"color":"red","weight":200});
 });
 
 test('has', () => {
-  expect(myCache.has("apple")).toEqual(true);
+  expect(myOtherCache.has("apple")).toEqual(true);
 });
 
 test('del', () => {
-  expect(myCache.del("apple")).toEqual(true);
+  expect(myOtherCache.del("apple")).toEqual(true);
 });
 
 test('flush', () => {
-  expect(myCache.flush()).toEqual(true);
+  expect(myOtherCache.flush()).toEqual(true);
 });
 
 test('exportJson', () => {
-  expect(myCache.exportJson()).toEqual(null);
+  expect(myOtherCache.exportJson()).toEqual(null);
 });
