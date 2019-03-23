@@ -5,9 +5,9 @@ export class CarbonCache {
         this.cache = null;
     }
 
-    protected timer: any;
-    protected cache: JSON;
-    protected expire: number;
+    private timer: any;
+    private cache: JSON;
+    private expire: number;
 
     public isEmpty(){
         return (this.cache === null);
@@ -21,6 +21,10 @@ export class CarbonCache {
     public has(key){
         const value = (this.cache === null) ? undefined : this.cache[key];
         return (value !== undefined);
+    }
+
+    public keys(){
+        return (this.cache === null) ? [] : Object.keys(this.cache);
     }
 
     public put(key, value: any, doReplace?: boolean){
@@ -57,13 +61,13 @@ export class CarbonCache {
     }
 
     // Helper methods
-    protected insert(key, value){
+    private insert(key, value){
         this.cache[key] = value;
         this.setExpiry();
         return true;
     }
 
-    protected setExpiry(){
+    private setExpiry(){
         if (this.expire !== undefined){
             clearTimeout(this.timer);
             this.timer = setTimeout(() => { this.flush(); }, this.expire*1000);

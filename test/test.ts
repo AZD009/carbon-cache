@@ -12,6 +12,10 @@ test('get', () => {
   expect(myCache.get("apple")).toEqual({});
 });
 
+test('keys', () => {
+  expect(myCache.keys()).toEqual([]);
+});
+
 test('has', () => {
   expect(myCache.has("apple")).toEqual(false);
 });
@@ -30,6 +34,10 @@ test('put', () => {
 
 test('put', () => {
   expect(myCache.put("banana",{"color":"yellow","weight":75},true)).toEqual(true);
+});
+
+test('keys', () => {
+  expect(myCache.keys()).toEqual(["banana"]);
 });
 
 test("isEmpty", () => {

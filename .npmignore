@@ -9,3 +9,5 @@ tsconfig.json
 dist/**/*
 !dist/src/*.*
 dist/src/index.d.ts
+dist/src/cache.d.ts
+dist/src/types.js

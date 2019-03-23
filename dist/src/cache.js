@@ -16,6 +16,9 @@ var CarbonCache = /** @class */ (function () {
         var value = (this.cache === null) ? undefined : this.cache[key];
         return (value !== undefined);
     };
+    CarbonCache.prototype.keys = function () {
+        return (this.cache === null) ? [] : Object.keys(this.cache);
+    };
     CarbonCache.prototype.put = function (key, value, doReplace) {
         if (this.cache === null) {
             this.cache = JSON;
