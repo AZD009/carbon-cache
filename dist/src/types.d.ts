@@ -3,6 +3,7 @@ export declare class CarbonCache {
     isEmpty(): boolean;
     get(key: any): any;
     has(key: any): boolean;
+    keys(): string[];
     put(key: any, value: any, doReplace?: boolean): boolean;
     del(key: any): boolean;
     importJson(data: any): boolean;
